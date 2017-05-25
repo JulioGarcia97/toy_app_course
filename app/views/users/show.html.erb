@@ -12,7 +12,9 @@
 
 <p>
 	<strong>User Post:</strong>
-	<%= @user.microposts.inspect %>	
+	<%@user.micropost.each do |micro|%>
+		<%= micro.content %> <br>
+	<% end %>
 </p>
 
 
